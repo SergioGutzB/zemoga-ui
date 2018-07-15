@@ -1,0 +1,1 @@
+{"version":3,"file":"4.da8262f6e620ee0ae3fe.hot-update.js","sources":["webpack:///styles/variables.js"],"sourcesContent":["export const variables = {\n  primary: \"#2bbbb5\",\n  secondary: \"#f9af2d\",\n  gray: \"#ebebeb\",\n  text: \"#333333\",\n}\n\n\n\n// WEBPACK FOOTER //\n// styles/variables.js"],"mappings":";;;;;;AAAA;AAAA;AACA;AACA;AACA;AACA;AAJA;;;;A","sourceRoot":""}
