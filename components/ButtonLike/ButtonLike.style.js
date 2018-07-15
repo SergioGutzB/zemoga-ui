@@ -13,6 +13,9 @@ export const Button = styled.button`
   border-color: ${props => props.like ? variables.primary+'c4' : variables.secondary+'c4' };
   padding:  ${props => props.small ? '2px' : '15px'};
   cursor: pointer;
+  @media (max-width: 500px) {
+    padding:  0px;
+  }
   &:hover {
     border-color: ${props => props.desactive ? (props.like ? variables.primary+'c4' : variables.secondary+'c4') : 'white' };
   }
@@ -20,6 +23,9 @@ export const Button = styled.button`
     color: white;
     path {
       fill: white;
+    }
+    @media (max-width: 500px) {
+      transform: scale(0.6) rotate(${props => props.like ? '0deg' : '180deg' });
     }
     width: ${props => props.small ? '18px' : 'auto'};
     height: ${props => props.small ? '18px' : 'auto'};

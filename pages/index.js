@@ -10,9 +10,8 @@ import BannerSubmit from '../components/BannerSubmit/BannerSubmit';
 export default class Index extends React.Component {
   render () {
     return (
-      <div>
-        <HeadHtml />
         <Container >
+        <HeadHtml />
           <section className="main-ruling">
             <Header />
             <div className="content">
@@ -44,7 +43,6 @@ export default class Index extends React.Component {
             <Footer />
           </section>
         </Container>
-      </div>
     )
   }
 }

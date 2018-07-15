@@ -23,13 +23,13 @@ export const Container = styled.div`
   }
   .progressOne {
     width: ${props => props.percentageOne ? props.percentageOne + '%' : '0%'};
-    background-color: ${variables.primary + 'cc'};
+    background-color: ${variables.primary + 'a8'};
     justify-content: flex-start;
 
   }
   .progressTwo {
     width: ${props => props.percentageTwo ? props.percentageTwo + '%' : '0%'};
-    background-color: ${variables.secondary + 'cc'};
+    background-color: ${variables.secondary + 'a8'};
     justify-content: flex-end;
     &__like {
       transform: rotate(180deg);
