@@ -27,7 +27,7 @@ export default class PreviousRuling extends React.Component {
           <p className="ruling__message">{message}</p>
           <div className="ruling__actions">
             <ButtonLike like={true} small={true} />
-            <ButtonLike like={true} small={true} />
+            <ButtonLike like={false} small={true} />
             <ButtonBorde label="Vote now" />
           </div>
         </div>

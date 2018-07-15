@@ -3,6 +3,101 @@ __NEXT_REGISTER_PAGE('/', function() {
           var comp =
       webpackJsonp([4],{
 
+/***/ "./components/BannerSubmit/BannerSubmit.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BannerSubmit; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BannerSubmit_style__ = __webpack_require__("./components/BannerSubmit/BannerSubmit.style.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Button_Button__ = __webpack_require__("./components/Button/Button.js");
+var _jsxFileName = "/home/sergio/Proyectos/zemoga2/zemoga/components/BannerSubmit/BannerSubmit.js";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var BannerSubmit =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(BannerSubmit, _React$Component);
+
+  function BannerSubmit(props, context) {
+    _classCallCheck(this, BannerSubmit);
+
+    return _possibleConstructorReturn(this, (BannerSubmit.__proto__ || Object.getPrototypeOf(BannerSubmit)).call(this, props, context));
+  }
+
+  _createClass(BannerSubmit, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BannerSubmit_style__["a" /* Container */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: "image",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        className: "text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      }, "Is ther anyone else you would want us to add?"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Button_Button__["a" /* default */], {
+        color: "#333333",
+        label: "Submit a Name",
+        size: "large",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        }
+      }));
+    }
+  }]);
+
+  return BannerSubmit;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./components/BannerSubmit/BannerSubmit.style.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Container; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.browser.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_variables__ = __webpack_require__("./styles/variables.js");
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].footer.withConfig({
+  displayName: "BannerSubmitstyle__Container",
+  componentId: "s1rrmza9-0"
+})(["height:70px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:5px 20px;background-color:white;position:relative;margin:35px 0px;color:", ";.image{position:absolute;width:100%;height:100%;top:0px;left:0px;background-image:url(/static/images/home/people.png);background-size:cover;background-position:center;opacity:0.1;}.text{line-height:1;font-size:2.05rem;font-weight:200;}"], __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text);
+
+/***/ }),
+
 /***/ "./components/BoxSpan/BoxSpan.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -138,6 +233,8 @@ var _jsxFileName = "/home/sergio/Proyectos/zemoga2/zemoga/components/Button/Butt
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -166,19 +263,29 @@ function (_React$Component) {
   _createClass(ButtonBorde, [{
     key: "render",
     value: function render() {
+      var _React$createElement;
+
+      console.log("props: ", this.props);
       var _props = this.props,
           label = _props.label,
-          action = _props.action;
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_style__["a" /* Button */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          action = _props.action,
+          color = _props.color,
+          size = _props.size;
+      var fontSize = size === 'large' ? '1.28rem' : size === 'medium' ? '1.1rem' : '1em';
+      var borderWeight = size === 'large' ? '3px' : size === 'large' ? '2px' : '1px';
+      var fontWeight = size === 'large' || size === 'medium' ? 400 : 600;
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_style__["a" /* Button */], (_React$createElement = {
+        color: color,
+        fontSize: fontSize,
+        borderWeight: borderWeight
+      }, _defineProperty(_React$createElement, "fontSize", fontSize), _defineProperty(_React$createElement, "fontWeight", fontWeight), _defineProperty(_React$createElement, "__source", {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      }), _React$createElement), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         "class": "label",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 18
         }
       }, label));
     }
@@ -203,7 +310,17 @@ function (_React$Component) {
 var Button = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].button.withConfig({
   displayName: "Buttonstyle__Button",
   componentId: "s1e7a3ip-0"
-})(["border:none;background-color:transparent;box-sizing:border-box;border:1px solid;border-color:white;padding:10px 18px;cursor:pointer;&:hover{background-color:#ffffffac;}.label{color:white;font-size:14px;font-weight:600;}"]);
+})(["border:none;background-color:transparent;box-sizing:border-box;border-style:solid;border-width:", ";border-color:", ";padding:10px 18px;cursor:pointer;&:hover{background-color:#ffffffac;}.label{line-height:1;color:", ";font-size:", ";font-weight:", ";}"], function (props) {
+  return props.borderWeight ? props.borderWeight : '1px';
+}, function (props) {
+  return props.color ? props.color : 'white';
+}, function (props) {
+  return props.color ? props.color : 'white';
+}, function (props) {
+  return props.fontSize ? props.fontSize : '1em';
+}, function (props) {
+  return props.fontWeight ? props.fontWeight : 400;
+});
 
 /***/ }),
 
@@ -326,6 +443,129 @@ var Button = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].
 }, function (props) {
   return props.like ? '0deg' : '180deg';
 });
+
+/***/ }),
+
+/***/ "./components/Footer/Footer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Footer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Footer_style__ = __webpack_require__("./components/Footer/Footer.style.js");
+var _jsxFileName = "/home/sergio/Proyectos/zemoga2/zemoga/components/Footer/Footer.js";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer(props, context) {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props, context));
+  }
+
+  _createClass(Footer, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Footer_style__["a" /* Container */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
+        className: "nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav__link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      }, "Term and Conditions"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav__link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      }, "Privacy policy"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav__link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        }
+      }, "Contact Us")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
+        className: "nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav__link right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        }
+      }, "Folow Us"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        className: "nav__link right icon-social",
+        src: "/static/images/home/facebook.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        className: "nav__link right icon-social",
+        src: "/static/images/home/twitter.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      })));
+    }
+  }]);
+
+  return Footer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./components/Footer/Footer.style.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Container; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.browser.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_variables__ = __webpack_require__("./styles/variables.js");
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].footer.withConfig({
+  displayName: "Footerstyle__Container",
+  componentId: "o0v7n3-0"
+})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;color:", ";height:80px;border-top:1px solid transparent;border-image:url(/static/images/home/dots.png) 1 round;.nav{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;&__link{cursor:pointer;font-weight:200;font-size:0.85em;margin-right:30px;&.icon-social{height:25px;width:auto;}&.right{margin-left:30px;margin-right:0px;}}}"], __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text);
 
 /***/ }),
 
@@ -815,7 +1055,7 @@ function (_React$Component) {
           lineNumber: 29
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ButtonLike_ButtonLike__["a" /* default */], {
-        like: true,
+        like: false,
         small: true,
         __source: {
           fileName: _jsxFileName,
@@ -6297,6 +6537,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Main_Main__ = __webpack_require__("./components/Main/Main.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_BoxSpan_BoxSpan__ = __webpack_require__("./components/BoxSpan/BoxSpan.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PreviousRuling_PreviousRuling__ = __webpack_require__("./components/PreviousRuling/PreviousRuling.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Footer_Footer__ = __webpack_require__("./components/Footer/Footer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_BannerSubmit_BannerSubmit__ = __webpack_require__("./components/BannerSubmit/BannerSubmit.js");
 var _jsxFileName = "/home/sergio/Proyectos/zemoga2/zemoga/pages/index.js";
 
 
@@ -6313,6 +6555,8 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -6338,90 +6582,90 @@ function (_React$Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 13
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_HeadHtml_HeadHtml__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index_style__["a" /* Container */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
         className: "main-ruling",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Header_Header__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 18
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Main_Main__["a" /* default */], {
         className: "main",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "days",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 21
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "days__closing",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       }, "CLOSING IN")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "days__days",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, "22"), " days")))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
         className: "section message content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_BoxSpan_BoxSpan__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
         className: "section votes content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 32
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_PreviousRuling_PreviousRuling__["a" /* default */], {
         name: "Kanye West",
@@ -6430,7 +6674,7 @@ function (_React$Component) {
         image: "/static/images/home/Kanye.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 33
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_PreviousRuling_PreviousRuling__["a" /* default */], {
         name: "Kanye West",
@@ -6439,7 +6683,7 @@ function (_React$Component) {
         image: "/static/images/home/Mark.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_PreviousRuling_PreviousRuling__["a" /* default */], {
         name: "Kanye West",
@@ -6448,7 +6692,7 @@ function (_React$Component) {
         image: "/static/images/home/Cristina.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_PreviousRuling_PreviousRuling__["a" /* default */], {
         name: "Kanye West",
@@ -6457,7 +6701,29 @@ function (_React$Component) {
         image: "/static/images/home/Malala.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 36
+        }
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+        className: "content banner",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__components_BannerSubmit_BannerSubmit__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        }
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+        className: "content",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_Footer_Footer__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
         }
       }))));
     }

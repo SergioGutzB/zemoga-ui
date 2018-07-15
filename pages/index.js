@@ -4,6 +4,8 @@ import Header from '../components/Header/Header';
 import Main from '../components/Main/Main';
 import BoxSpan from '../components/BoxSpan/BoxSpan';
 import PreviousRuling from '../components/PreviousRuling/PreviousRuling';
+import Footer  from '../components/Footer/Footer';
+import BannerSubmit from '../components/BannerSubmit/BannerSubmit';
 
 export default class Index extends React.Component {
   render () {
@@ -34,6 +36,13 @@ export default class Index extends React.Component {
             <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Malala.png"/>
           </section>
 
+          <section className="content banner">
+            <BannerSubmit />
+          </section>
+
+          <section className="content">
+            <Footer />
+          </section>
         </Container>
       </div>
     )
