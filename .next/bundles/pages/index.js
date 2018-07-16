@@ -147,53 +147,89 @@ function (_React$Component) {
   _inherits(BoxSpan, _React$Component);
 
   function BoxSpan(props, context) {
+    var _this;
+
     _classCallCheck(this, BoxSpan);
 
-    return _possibleConstructorReturn(this, (BoxSpan.__proto__ || Object.getPrototypeOf(BoxSpan)).call(this, props, context));
+    _this = _possibleConstructorReturn(this, (BoxSpan.__proto__ || Object.getPrototypeOf(BoxSpan)).call(this, props, context));
+    _this.state = {
+      close: false,
+      show: true
+    };
+    return _this;
   }
 
   _createClass(BoxSpan, [{
+    key: "close",
+    value: function close() {
+      var _this2 = this;
+
+      setTimeout(function (_) {
+        _this2.setState({
+          show: false
+        });
+      }, 298);
+      this.setState({
+        close: true
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BoxSpan_style__["a" /* Box */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, "Speak out. Be heard.", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("strong", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      }, " Be counted"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "message",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }, "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It\u2019s easy: You share your opinion, we analyze and put the data in a public report.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Close, {
-        className: "close",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      }));
+      var _this3 = this;
+
+      if (this.state.show) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BoxSpan_style__["a" /* Box */], {
+          close: this.state.close,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "title",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          }
+        }, "Speak out. Be heard.", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("strong", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+          }
+        }, " Be counted"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "message",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 30
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31
+          }
+        }, "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It\u2019s easy: You share your opinion, we analyze and put the data in a public report.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Close, {
+          className: "close",
+          onClick: function onClick(_) {
+            return _this3.close();
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33
+          }
+        }));
+      } else {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
+          }
+        });
+      }
     }
   }]);
 
@@ -213,10 +249,14 @@ function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_variables__ = __webpack_require__("./styles/variables.js");
 
 
+var fadeIn = Object(__WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* keyframes */])(["from{transform:scale(.25);opacity:0;}to{transform:scale(1);opacity:1;}"]);
+var fadeOut = Object(__WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* keyframes */])(["from{transform:scale(1);opacity:1;}to{transform:scale(.1);opacity:0;}"]);
 var Box = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div.withConfig({
   displayName: "BoxSpanstyle__Box",
   componentId: "g3xo3b-0"
-})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:15px 25px;background-color:", ";color:", ";@media (max-width:500px){padding:8px 10px;}.title{color:", ";font-size:22px;font-weight:200;@media (max-width:500px){display:none;}@media (min-width:501px) and (max-width:900px){font-size:1em;margin-right:10px;width:217px;}strong{font-size:38px;@media (max-width:500px){font-size:1.2em;}@media (min-width:501px) and (max-width:900px){font-size:1em;}}}.message{flex:auto;text-align:left;font-size:15px;font-weight:200;@media (max-width:500px){font-size:0.9em;}@media (min-width:501px) and (max-width:900px){font-size:0.9em;}}.close{.shp0{fill:", ";}cursor:pointer;width:40px;margin-left:10px;}"], __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].gray, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text);
+})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:15px 25px;background-color:", ";color:", ";animation:", " 500ms linear;@media (max-width:500px){padding:8px 10px;}.title{color:", ";font-size:22px;font-weight:200;@media (max-width:500px){display:none;}@media (min-width:501px) and (max-width:900px){font-size:1em;margin-right:10px;width:217px;}strong{font-size:38px;@media (max-width:500px){font-size:1.2em;}@media (min-width:501px) and (max-width:900px){font-size:1em;}}}.message{flex:auto;text-align:left;font-size:15px;font-weight:200;@media (max-width:500px){font-size:0.9em;}@media (min-width:501px) and (max-width:900px){font-size:0.9em;}}.close{.shp0{fill:", ";}cursor:pointer;width:40px;margin-left:10px;}"], __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].gray, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text, function (props) {
+  return props.close ? fadeOut : fadeIn;
+}, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text, __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].text);
 
 /***/ }),
 
@@ -2455,7 +2495,7 @@ if (false) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export css */
-/* unused harmony export keyframes */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return keyframes; });
 /* unused harmony export injectGlobal */
 /* unused harmony export isStyledComponent */
 /* unused harmony export consolidateStreamedStyles */

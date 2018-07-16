@@ -1,5 +1,29 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { variables } from '../../styles/variables';
+
+const fadeIn = keyframes`
+  from {
+    transform: scale(.25);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(.1);
+    opacity: 0;
+  }
+`;
 
 export const Box = styled.div`
   display: flex;
@@ -9,6 +33,7 @@ export const Box = styled.div`
   padding: 15px 25px;
   background-color: ${variables.gray};
   color: ${variables.text};
+  animation: ${props => props.close ? fadeOut : fadeIn} 500ms linear;
   @media (max-width: 500px) {
     padding: 8px 10px;
   }
