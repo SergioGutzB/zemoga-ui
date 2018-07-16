@@ -425,11 +425,16 @@ function (_React$Component) {
           like = _props.like,
           action = _props.action,
           small = _props.small,
-          desactive = _props.desactive;
+          desactive = _props.desactive,
+          selected = _props.selected;
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ButtonLike_style__["a" /* Button */], {
         like: !!like,
         small: small,
         desactive: desactive,
+        selected: selected,
+        onClick: function onClick(_) {
+          return action();
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
@@ -464,20 +469,18 @@ console.log("variables: ", __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /
 var Button = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].button.withConfig({
   displayName: "ButtonLikestyle__Button",
   componentId: "l30rzq-0"
-})(["border:none;width:", ";height:", ";background-color:", ";box-sizing:border-box;border:2px solid;border-color:", ";padding:", ";cursor:pointer;@media (max-width:500px){padding:0px;}@media (min-width:501px) and (max-width:900px){padding:", ";}&:hover{border-color:", ";}.like{color:white;path{fill:white;}@media (max-width:500px){transform:scale(0.6) rotate(", ");}@media (min-width:501px) and (max-width:900px){transform:scale(0.8) rotate(", ");}width:", ";height:", ";transform:rotate(", ")}"], function (props) {
+})(["border:none;width:", ";height:", ";background-color:", ";box-sizing:border-box;border:2px solid;border-color:", ";padding:", ";cursor:pointer;opacity:1;animation:opacity 3ms linear;@media (max-width:500px){padding:0px;}@media (min-width:501px) and (max-width:900px){padding:", ";}&:hover{opacity:0.7;animation:opacity 3ms linear;}.like{color:white;path{fill:white;}@media (max-width:500px){transform:scale(0.6) rotate(", ");}@media (min-width:501px) and (max-width:900px){transform:scale(0.8) rotate(", ");}width:", ";height:", ";transform:rotate(", ")}"], function (props) {
   return props.small ? '30px' : '100%';
 }, function (props) {
   return props.small ? '32px' : '100%';
 }, function (props) {
   return props.like ? __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].primary + 'c4' : __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].secondary + 'c4';
 }, function (props) {
-  return props.like ? __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].primary + 'c4' : __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].secondary + 'c4';
+  return props.selected && props.small ? 'white' : props.like ? __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].primary + 'c4' : __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].secondary + 'c4';
 }, function (props) {
   return props.small ? '2px' : '15px';
 }, function (props) {
   return props.small ? '2px' : '0px';
-}, function (props) {
-  return props.desactive ? props.like ? __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].primary + 'c4' : __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */].secondary + 'c4' : 'white';
 }, function (props) {
   return props.like ? '0deg' : '180deg';
 }, function (props) {

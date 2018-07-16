@@ -10,9 +10,11 @@ export const Button = styled.button`
   background-color: ${props => props.like ? variables.primary+'c4' : variables.secondary+'c4' };
   box-sizing: border-box;
   border: 2px solid;
-  border-color: ${props => props.like ? variables.primary+'c4' : variables.secondary+'c4' };
+  border-color: ${props => props.selected && props.small ? 'white' : props.like ? variables.primary+'c4' : variables.secondary+'c4' };
   padding:  ${props => props.small ? '2px' : '15px'};
   cursor: pointer;
+  opacity: 1;
+  animation: opacity 3ms linear;
   @media (max-width: 500px) {
     padding:  0px;
   }
@@ -20,7 +22,8 @@ export const Button = styled.button`
     padding:  ${props => props.small ? '2px' : '0px'};
   }
   &:hover {
-    border-color: ${props => props.desactive ? (props.like ? variables.primary+'c4' : variables.secondary+'c4') : 'white' };
+    opacity: 0.7;
+    animation: opacity 3ms linear;
   }
   .like {
     color: white;

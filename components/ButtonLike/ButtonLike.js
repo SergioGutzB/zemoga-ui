@@ -8,11 +8,11 @@ export default class ButtonLike extends React.Component {
   }
 
   render () {
-    const  { like, action, small, desactive } = this.props;
+    const  { like, action, small, desactive, selected } = this.props;
 
     return (
-      <Button  like={!!like} small={small} desactive={desactive}>
-         <Like className="like" />
+      <Button  like={!!like} small={small} desactive={desactive} selected={selected} onClick={_=> action()}>
+        <Like className="like" />
       </Button>
     )
   }
