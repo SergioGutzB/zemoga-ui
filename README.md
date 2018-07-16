@@ -14,6 +14,8 @@ yarn
 yarn dev
 ```
 
+Open your browser and put the url: [http://localhost:3000](http://localhost:3000) 
+
 ## Notes
 The layout of the project was developed with the [styled-components](https://www.styled-components.com) together with ReactJS, using SASS as a preprocessor of css. 
 
