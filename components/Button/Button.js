@@ -13,7 +13,7 @@ export default class ButtonBorde extends React.Component {
     const fontWeight =  size === 'large' || size === 'medium' ? 400 : 600;
 
     return (
-      <Button color={color} fontSize={fontSize} borderWeight={borderWeight} fontSize={fontSize} fontWeight={fontWeight}>
+      <Button color={color} fontSize={fontSize} borderWeight={borderWeight} fontSize={fontSize} fontWeight={fontWeight} onClick={_=> action? action() : null }>
         <p className="label">{label}</p>
       </Button>
     )
