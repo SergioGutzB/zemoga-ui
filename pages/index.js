@@ -29,10 +29,13 @@ export default class Index extends React.Component {
 
 
           <section className="section votes content">
-            <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Kanye.png"/>
-            <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Thank you for voting!" image="/static/images/home/Mark.png"/>
-            <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Cristina.png"/>
-            <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Malala.png"/>
+            <h1 className="votes__title">Votes</h1>
+            <div className="votes__grid">
+              <PreviousRuling name="Kanye West" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Kanye.png"/>
+              <PreviousRuling name="Mark Zuckerberg" experience="1 month in Entretaiment" message="Thank you for voting!" image="/static/images/home/Mark.png"/>
+              <PreviousRuling name="Cristina Fernández de Kirchner" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Cristina.png"/>
+              <PreviousRuling name="Malala Yousafzai" experience="1 month in Entretaiment" message="Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero." image="/static/images/home/Malala.png"/>
+            </div>
           </section>
 
           <section className="content banner">

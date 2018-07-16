@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { variables } from '../styles/variables';
 
-const margin = "8rem";
-const marginSmall = "10px";
-
+const margin = variables.margin;
+const marginSmall = variables.marginSmall;
+const marginMedium = variables.marginMedium;
 
 export const Container = styled.div`
   display: flex;
@@ -12,25 +13,32 @@ export const Container = styled.div`
   padding: 0px;
   width: 100%;
   overflow-x: hidden;
+  max-width: ${variables.maxWidth};
+  margin: 0 auto;
+  border-left: 1px solid #fbfbfb;
+  border-right: 1px solid #fbfbfb;
   .main-ruling {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
+    width: 100%;
     background-image: url(/static/images/home/pope.png);
-    min-height: 81vh;
+    height: 80.5vh;
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 105vw auto;
-    overflow-x: hidden;
+    background-size: 105% auto;
     filter: saturate(1.2);
-
     @media (max-width: 500px)  and (orientation: portrait){
-      min-height: 51vh;
-      background-size: 152vw auto;
-      background-position: -80px top
+      height: 57.5vh;
+      background-size: auto 57.5vh;
+      background-position: -120px center;
+    }
+    @media (min-width: 501px) and (max-width: 900px) {
+      height: 30rem;
+      background-size: 55rem auto;
+      background-position: -2.2rem 0rem;
     }
     .days {
       display: flex;
@@ -47,6 +55,9 @@ export const Container = styled.div`
         position: relative;
         @media (max-width: 500px)  {
           padding: 4px 0px;
+        }
+        @media (min-width: 501px) and (max-width: 900px) {
+          padding: 8px 0px;
         }
         &:after {
           content: '';
@@ -65,6 +76,10 @@ export const Container = styled.div`
           border-bottom: 10px solid transparent;
           @media (max-width: 500px)  {
             top: 12px;
+          }
+          @media (min-width: 501px) and (max-width: 900px) {
+            top: 14px;
+            right: -15px;
           }
         }
         p {
@@ -89,8 +104,12 @@ export const Container = styled.div`
         padding-left: 20px;
         @media (max-width: 500px)  {
           font-size: 1.6em;
-          font-weight: 200;
           padding: 4px 0px;
+          padding-left: 20px;
+        }
+        @media (min-width: 501px) and (max-width: 900px) {
+          font-size: 1.8em;
+          padding: 8px 0px;
           padding-left: 20px;
         }
       }
@@ -103,15 +122,37 @@ export const Container = styled.div`
       margin-left: ${marginSmall};
       margin-right: ${marginSmall};
     }
+    @media (min-width: 501px) and (max-width: 900px) {
+      margin-left: ${marginMedium};
+      margin-right: ${marginMedium};
+    }
   }
 
   .votes {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    @media (max-width: 500px)  and (orientation: portrait){
-      grid-gap: 10px;
-      grid-template-columns: 1fr;
+    &__title {
+      font-size: 2.8em;
+      font-weight: 200;
+      color: ${variables.text};
+      margin-bottom: 35px;
+      @media (max-width: 500px)  and (orientation: portrait){
+        margin-bottom: 15px;
+      }
+      @media (min-width: 501px) and (max-width: 900px) {
+        margin-bottom: 20px;
+      }
+    }
+    &__grid {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: 500px)  and (orientation: portrait){
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 501px) and (max-width: 900px) {
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 

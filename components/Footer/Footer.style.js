@@ -10,6 +10,7 @@ export const Container = styled.footer`
   height: 80px;
   border-top: 1px solid transparent;
   border-image: url(/static/images/home/dots.png) 1 round;
+  padding: 5px 0px;
   @media (max-width: 500px)  and (orientation: portrait){
     flex-direction: column;
     align-content: center;

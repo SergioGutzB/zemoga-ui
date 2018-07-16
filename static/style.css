@@ -22,3 +22,11 @@ body {
     margin: 10px 0px 10px;
   }
 }
+@media (min-width: 501px) and (max-width: 900px) {
+  .section {
+    margin: 20px 0px 0px;
+  }
+  .section:nth-child-last {
+    margin: 20px 0px 20px;
+  }
+}

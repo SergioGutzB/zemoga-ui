@@ -16,8 +16,11 @@ export const Ruling = styled.div`
   @media (max-width: 500px)  and (orientation: portrait){
     height: 450px;
   }
+  @media (min-width: 501px) and (max-width: 900px) {
+    height: 460px;
+  }
   .ruling {
-    padding: 35px 60px 35px 35px;
+    padding: 35px 60px 35px 38px;
     color: white;
     width: calc(100% - 95px);
     position: relative;
@@ -26,18 +29,33 @@ export const Ruling = styled.div`
       padding: 35px;
       width: calc(100% - 90px);
     }
+    @media (min-width: 501px) and (max-width: 900px) {
+      padding: 35px;
+      width: calc(100% - 70px);
+    }
      &__title {
       position: relative;
+      margin-bottom: 5px;
       &__state {
         position: absolute;
-        left: -35px;
-        top: 10px;
+        left: -38px;
+        bottom: -3px;
         width: 40px;
         height: 40px;
+        @media (max-width: 500px)  and (orientation: portrait){
+          left: -35px;
+        }
+        @media (min-width: 501px) and (max-width: 900px) {
+          left: -35px;
+        }
       }
       &__name {
-        font-size: 2.6em;
+        font-size: 2.7em;
         font-weight: 600;
+        line-height: 1;
+        @media (min-width: 501px) and (max-width: 900px) {
+          font-size: 2.4em;
+        }
       }
     }
 
@@ -52,6 +70,9 @@ export const Ruling = styled.div`
       font-weight: 400;
       margin: 16px 0px;
       height: 38px;
+      @media (min-width: 501px) and (max-width: 900px) {
+        height: 57px;
+      }
     }
 
     &__actions {
@@ -63,6 +84,9 @@ export const Ruling = styled.div`
       align-items: center;
       @media (max-width: 500px)  and (orientation: portrait){
         width: 60%;
+      }
+      @media (min-width: 501px) and (max-width: 900px) {
+        width: 80%;
       }
     }
 

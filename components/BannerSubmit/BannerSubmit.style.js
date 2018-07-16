@@ -16,6 +16,10 @@ export const Container = styled.div`
     padding: 0px 10px;
     margin: 10px 0px;
   }
+  @media (min-width: 501px) and (max-width: 900px) {
+    padding: 5px 15px;
+    margin: 15px 0px;
+  }
   .image {
     position: absolute;
     width: 100%;
@@ -25,13 +29,17 @@ export const Container = styled.div`
     background-image: url(/static/images/home/people.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.2;
   }
   .text {
     line-height: 1;
-    font-size: 2.05rem;
+    font-size: 2.01rem;
     font-weight: 200;
     @media (max-width: 500px){
+      font-size: 1.4rem;
+      width: 60%;
+    }
+    @media (min-width: 501px) and (max-width: 900px) {
       font-size: 1.4rem;
       width: 60%;
     }

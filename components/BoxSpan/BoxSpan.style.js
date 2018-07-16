@@ -17,13 +17,20 @@ export const Box = styled.div`
     font-size: 22px;
     font-weight: 200;
     @media (max-width: 500px) {
-      font-size: 0.9em;
       display: none;
+    }
+    @media (min-width: 501px) and (max-width: 900px) {
+      font-size: 1em;
+      margin-right: 10px;
+      width: 217px;
     }
     strong {
       font-size: 38px;
       @media (max-width: 500px) {
         font-size: 1.2em;
+      }
+      @media (min-width: 501px) and (max-width: 900px) {
+        font-size: 1em;
       }
     }
   }
@@ -35,14 +42,16 @@ export const Box = styled.div`
     @media (max-width: 500px) {
       font-size: 0.9em;
     }
+    @media (min-width: 501px) and (max-width: 900px) {
+      font-size: 0.9em;
+    }
   }
   .close {
     .shp0 {
       fill: ${variables.text};
     }
     cursor: pointer;
-    width: 50px;
-    height: 30px;
+    width: 40px;
     margin-left: 10px;
   }
 `;
