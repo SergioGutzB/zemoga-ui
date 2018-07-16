@@ -376,7 +376,6 @@ function (_React$Component) {
     value: function render() {
       var _React$createElement;
 
-      console.log("props: ", this.props);
       var _props = this.props,
           label = _props.label,
           action = _props.action,
@@ -391,12 +390,12 @@ function (_React$Component) {
         borderWeight: borderWeight
       }, _defineProperty(_React$createElement, "fontSize", fontSize), _defineProperty(_React$createElement, "fontWeight", fontWeight), _defineProperty(_React$createElement, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 16
       }), _React$createElement), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-        "class": "label",
+        className: "label",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 17
         }
       }, label));
     }
@@ -505,7 +504,7 @@ function (_React$Component) {
         desactive: desactive,
         selected: selected,
         onClick: function onClick(_) {
-          return action();
+          return !!action ? action() : null;
         },
         __source: {
           fileName: _jsxFileName,
@@ -538,7 +537,6 @@ function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_variables__ = __webpack_require__("./styles/variables.js");
 
 
-console.log("variables: ", __WEBPACK_IMPORTED_MODULE_1__styles_variables__["a" /* variables */]);
 var Button = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.button.withConfig({
   displayName: "ButtonLikestyle__Button",
   componentId: "l30rzq-0"

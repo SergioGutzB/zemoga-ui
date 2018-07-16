@@ -11,7 +11,7 @@ export default class ButtonLike extends React.Component {
     const  { like, action, small, desactive, selected } = this.props;
 
     return (
-      <Button  like={!!like} small={small} desactive={desactive} selected={selected} onClick={_=> action()}>
+      <Button  like={!!like} small={small} desactive={desactive} selected={selected} onClick={_=> !!action? action() : null}>
         <Like className="like" />
       </Button>
     )

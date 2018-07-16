@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { variables } from '../../styles/variables';
 
-
-console.log("variables: ", variables)
 export const Button = styled.button`
   border: none;
   width: ${props => props.small ? '30px' : '100%'};

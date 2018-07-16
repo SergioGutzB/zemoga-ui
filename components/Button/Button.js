@@ -7,7 +7,6 @@ export default class ButtonBorde extends React.Component {
   }
 
   render () {
-  console.log("props: ", this.props)
     const  { label, action, color, size } = this.props;
     const fontSize = size === 'large' ? '1.28rem' : size === 'medium' ? '1.1rem' : '1em';
     const borderWeight = size === 'large' ? '3px' : size === 'large' ? '2px' : '1px';
@@ -15,7 +14,7 @@ export default class ButtonBorde extends React.Component {
 
     return (
       <Button color={color} fontSize={fontSize} borderWeight={borderWeight} fontSize={fontSize} fontWeight={fontWeight}>
-        <p class="label">{label}</p>
+        <p className="label">{label}</p>
       </Button>
     )
   }
